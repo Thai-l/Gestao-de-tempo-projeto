@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Gestão de tempo para estudo</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="js/esquecisenha.js"></script>
+</head>
+
+<body class="bg">
+    <div class="senha-form">
+        <form>  
+            <!-- action="./acessar.js" method="post" -->
+            <h2 class="text-center">Esqueci senha</h2>
+            
+            <div class="form-group">
+                <input type="email" name="email" id="email_cad" required="required"class="form-control" placeholder="Email cadastrado"/>
+                   
+            </div>
+            <div class="form-group">
+                <input type="password" name="senha" id="senha" required="required" class="form-control" placeholder="Colocar nova Senha"/>
+            <div class="form-group">
+                <button class="btn btn-primary btn-block" id="newPassword" required="required" type="button"  onclick="forgotpassword()">Salvar</button>
+            </div>
+            <div class="form-group">
+                <button type="button" class="btn btn-link" required="required" onclick="cancelar()"> < Voltar </button>
+            </div>
+           
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bootstrap Simple Login Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="js/acessar.js"></script>
+</head>
+
+<body class="bg">
+    <div class="conta-form">
+        <form>  
+            <!-- action="./acessar.js" method="post" -->
+            <h2 class="text-center">Cadastro</h2>
+            <div class="form-group">
+                <input type="text" name="nome" id="nome" required="required" class="form-control" placeholder="Nome Completo"maxlength="255"/>
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" id="email_cad" required="required"class="form-control" placeholder="Email"maxlength="255"/>
+                   
+            </div>
+            <div class="form-group">
+                <input type="password" name="senha" id="senha" required="required" class="form-control" placeholder="Senha"maxlength="15"/>
+                   
+            </div>
+            <div class="form-group">
+                <input type="tel" name="telefone" id="telefone" required="required" class="form-control" placeholder="(xx)xxxxx-xxxx"maxlength="11"/>
+                 
+            </div>
+            <div class="form-group">
+                <button class="btn btn-primary btn-block" id="botao" required="required" type="button" onclick="salvarFormulario()">Salvar</button>
+            </div>
+            <div class="form-group">
+                <button type="button" class="btn btn-link" required="required" onclick="cancelar()">Voltar</button>
+            </div>
+           
+        </form>
+    </div>
+</body>
+
+</html>
