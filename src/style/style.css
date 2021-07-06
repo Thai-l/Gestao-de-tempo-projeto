@@ -1,0 +1,786 @@
+html {
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+body {
+    width: 100%;
+    height: auto;
+    display: block;
+    box-sizing: border-box;
+    color: white;
+    font-family: Roboto, sans-serif;
+}
+
+#tip-1 {
+    width: 100%;
+    background-color: #8492A6;
+
+}
+
+#tip-1 p{
+    padding: 5px;
+    text-align: center;
+    color: white;
+    font-size: 1.2em;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    display: inline-flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    background-color: #E5E9F2;
+    box-sizing: border-box;
+    color: #47525E;
+}
+
+#logo {
+    flex-grow: 0.1;
+}
+
+header h1 {
+    flex-grow: 1;
+}
+
+header nav { 
+    flex-grow: 0.2;
+    display: inline-flex;
+    height: 3vh;
+    
+}
+
+header nav a{
+    flex-grow: 0.1; 
+    padding: 1%;   
+}
+
+#search {
+    flex-grow: 0.2;
+    
+}
+
+main {
+    height: 1000px;
+    width: 100%;
+    padding-bottom: 5%;
+    display: block;
+    height: 70vh;
+}
+
+#main-content h2{
+    text-align: center;
+    width: 100%;
+    font-size: 50px;
+    margin-bottom: 5%;
+    margin-top: 10%;
+}
+
+#first-paragraph {
+    width: 100%;
+    display: flex;
+}
+
+#first-paragraph p{
+    align-items: center;
+    font-size: 1.2em; 
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 5%;
+}
+
+#second-paragraph {
+    width: 100%;   
+
+}
+
+#second-paragraph p{
+    align-items: center;
+    font-size: 1.2em; 
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 5%;
+}
+
+#conversion {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 4em;
+}
+
+#conversion button{
+    width: 150px;
+    padding: 1em;
+    border: 1px;
+    border-radius: 10%;
+    color: white;
+    background-color: rgb(175, 184, 21);
+}
+
+#conversion a {
+    color: white;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #47525E;
+    height: 25vh;
+}
+
+#menu-footer {
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+}
+
+#menu-footer a {
+    padding: 4%;
+    font-size: 1em;
+    color: white;
+}
+
+#search-media{
+    margin-top: 5%;
+
+}
+
+
+#form button {
+    padding: 6px;
+    border: 1px;
+    border-radius: 5%;
+}
+
+
+#media{
+    display: flex;
+}
+
+/* Página home */
+
+#menu-time {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 4vh 0 4vh 0;
+
+}
+
+#menu-exibition {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    align-items: center;
+
+}
+#menu-exibition button{
+    width: 119px;
+    padding: 7px;
+    background-color: #FFFFFF;
+    border: 1px solid;
+}
+
+#menu-day {
+    display: flex;
+    align-items: center;
+}
+#menu-day p{
+    color: #47525E;
+    border: #47525E 2px solid  ;
+    padding: 4%;
+}
+
+#menu-day button{
+    width: 40px;
+    padding: 7px;
+    background-color: #FFFFFF;
+    border: 2px solid #47525E ;
+}
+
+#menu-day button:active{
+    color: #A20E11;
+    font-size:1.2;
+}
+
+
+
+#data-exibition {
+    padding: 1%;    
+    margin: 1vh 0 1vh 25vw;
+    
+}
+
+#table-content {
+    width: 100%;
+    display: flex;
+}
+
+table:first-child{
+    border: 1px;
+    margin-left: 10vw;
+    width: 60vw;   
+   
+}
+
+table,  td {
+    border: #8492A6 solid 1px;
+    border-collapse: collapse;
+    font-size: 1.0em;
+    margin-right: 1vw;
+    margin-bottom: 3vh;
+    color: grey;
+
+}
+
+
+td {
+    padding: 1vh 2vw 1vh 2vw;
+}
+
+td:hover{
+   background-color: #47525E;
+}
+
+table#tabela-mes {
+   width: 100%;
+   margin: 0 2em 0em 2em;
+}
+
+table#tabela-mes tr td {
+    height: 4em;
+    width: 4em;
+}
+
+.checkbox{
+    border: #8492A6 solid 3px;
+}
+
+.color-line{
+    background-color: #E0E1E1;
+}
+.bg {
+width: 100%;
+background-image:url("https://cdn.pixabay.com/photo/2016/02/19/11/19/office-1209640_960_720.jpg") ;
+background-repeat: no-repeat;
+background-size: cover;
+z-index: -1000;
+}
+
+#sem-cadastro {
+    font-size: 1.4em;
+    color: grey;
+    text-align: center;
+    margin-top: 15%;
+    width: 100%;
+}
+
+/* Página de login */
+
+.login-form {
+    color: #47525E;
+}
+
+.login-form {
+    width: 340px;
+    margin: 50px auto;
+    font-size: 15px;
+}
+
+.login-form form {
+    margin-bottom: 15px;
+    background: #f7f7f7;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+}
+
+.login-form h2 {
+    margin: 0 0 15px;
+}
+
+.form-control,
+.btn{
+    min-height: 38px;
+    border-radius: 2px;
+}
+
+.btn {
+    font-size: 15px;
+    font-weight: bold;
+}
+.content{
+    width: 500px;
+    margin: 0px auto;
+    position: relative; 
+  }
+
+  
+ /* pagina de criação de conta */
+
+  .conta-form {
+    width: 340px;
+    margin: 50px auto;
+    font-size: 15px;
+}
+
+.conta-form{
+    width: 500px;
+    margin-bottom: 15px;
+    background: #f7f7f7;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+}
+
+conta-form h2 {
+    margin: 0 0 15px;
+}
+
+.conta-form {
+    color: #47525E;
+}
+
+ /* Página de esqueci senha */
+
+
+
+ .senha-form {
+    width: 340px;
+    margin: 50px auto;
+    font-size: 15px;
+    text-align: start;
+}
+
+.senha-form{
+    width: 500px;
+    margin-bottom: 15px;
+    background: #f7f7f7;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    
+}
+
+senha-form h2 {
+    margin: 0 0 15px;
+}
+
+.senha-form {
+    color: #47525E;
+    
+}
+
+.senha-form input{
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.btn btn-link{
+    text-align: right;
+}
+
+.btn-active {
+    color:rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+    font-size: 1.0em;
+}
+
+/* RELATÓRIO  */
+
+.text-center {
+    text-align: center;
+  }
+
+ #Title p{
+    padding: 5px;
+    text-align: center;
+    color: #47525E;
+    font-size: 1.2em;
+}
+
+mainrelatorio{
+height: auto;
+width: 100%;
+padding-bottom: 5%;
+display: block;
+}
+
+footerRelatorio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #47525E;
+    height: 25vh;
+}
+
+.container {
+    width: 100%;
+    margin: 3.125rem auto 0 auto;
+    color: #47525E;
+  }
+
+  .container2 {
+    width: 100%;
+    margin-left: 20px;
+  }
+
+.minicontainer1{
+    width: 300px;
+    text-align: center;
+    color: #47525E;    
+    display: inline-block
+  }
+
+  .minicontainer2{
+    width: 150px;
+    text-align: center;
+    color: #47525E;
+    display: inline-block
+  }
+
+  .minicontainer3{
+    width: 50px;
+    text-align: left;
+    color: #47525E;
+    vertical-align: middle;
+    display: inline-block
+  }
+  .minicontainer2 h5{
+    font-family: Lato;
+    font-size: 26px;
+    line-height: 33px;
+    display: inline-block;
+    text-align: right;
+}
+
+  .container h1{
+    text-align: center;
+    font-size: 40px;
+    width: 100%;
+    font-family: Lato;
+}
+
+.container h2{
+    text-align: center;
+    font-size: 36px;
+    line-height: 46px;
+    display: inline-block;
+    width: 500px;
+    font-family: Lato;
+}
+
+.container h3{
+    font-family: Lato;
+    font-size: 26px;
+    line-height: 46px;
+    vertical-align: sub;
+    text-align: left;
+    display: inline-flex
+}
+
+.container h4{
+    font-family: Lato;
+    font-size: 26px;
+    line-height: 33px;
+    display: inline-flex;
+}
+
+.container h5{
+    font-family: Lato;
+    font-size: 26px;
+    line-height: 33px;
+    display: inline-flex;
+    text-align: right;
+}
+.container2 h6{
+    font-family: Lato;
+    font-size: 21px;
+    line-height: 33px;
+    display: inline-flex;
+    text-align: left;
+    color: #47525E;
+    width: 300px;
+}
+.container2 h3{
+    font-family: Lato;
+    font-size: 31px;
+    color: #47525E;
+    margin-top: 50px;
+}
+
+
+.container nav { 
+    flex-grow: 0.5;
+    display: inline-flex;
+    
+}
+
+.container nav a{
+    flex-grow: 0.1; 
+    padding: 4px 4em 0 2em;  
+}
+
+.container nav a1{
+    flex-grow: 0.1; 
+    padding: 4px 4em 0 8em;  
+}
+
+.container button{
+    width: 100px;
+    padding: 7px;
+    background-color: #FFFFFF;
+    border: 12x solid #47525E ;
+    justify-content: space-around;
+}
+
+.container button:active{
+    color: #A20E11;
+    font-size:1.2;
+}
+
+.container title{
+    font-size:1.2;
+}
+
+#cycle {
+    display: inline-block;
+    align-items: center;
+    width: 100px;
+
+}
+#cycle button{
+    width: 119px;
+    padding: 7px;
+    background-color: #FFFFFF;
+    border: 1px solid;
+}
+
+#day {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    left: 300px;
+
+}
+#day p{
+    font-family: Lato;
+    font-size: 18px;
+    line-height: 29px;
+    width: 138px;
+    text-align: center;
+    border: 1px solid;
+}
+
+#day button{
+    width: 41px;
+    padding: 7px;
+    background-color: #FFFFFF;
+    border: 1px solid;
+}
+
+#day button:active{
+    color: #A20E11;
+    font-size:1.2;
+}
+
+
+.header {
+    padding: 0 0.625rem;
+    margin-bottom: 1.875rem;
+    color: #47525E;
+  }
+
+  #myProgress {
+    width: 100%;
+    width: 1050px;
+    height: 35px;
+    background-color: red;    
+    display: inline-block; 
+  }
+  
+  .myBar {
+    height: 35px;
+    background-color: green;
+    display: inline-block;
+  }
+
+  .myBar a {
+    height: 35px;
+    display: inline-flex;
+  }
+
+  .rewards {
+    display: inline-flex;
+    width: 100%;
+    margin: 2.125rem auto 0 auto;
+  }
+
+.rewards nav a{
+    flex-grow: 0.5; 
+    padding: 10%;   
+}
+
+.date {
+    display: inline-flex;
+    width: 100%;
+    margin: 1.125rem auto 0 auto;
+  }
+
+ /* Página de cadastro */
+
+  .cadastro-form {
+    width: 500px;
+    height: 465px;
+    color: #47525E;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    border-radius: 10px;
+    background-color: #E0E1E1;
+    padding: 25px;
+}
+.cadastro-form h2{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bolder;
+}
+.lista-suspensa {
+    flex: 1 1 45%;
+    position: relative;
+}
+.nome-atividade{
+    flex: 1 1 45%;
+    position: relative;
+}
+:root{
+    --backgroundButton-Cinza: lightblue;
+    --font-Family: Roboto, sans-serif;
+    --backgroundButtonHover-Cinza: rgb(167, 167, 167);
+    --Color-Cinza: rgb(0, 0, 0);
+    --ColorHover-Cinza: rgb(48, 48, 48);
+}
+#botao {
+    color: var(--Color-Cinza);
+    background-color: var(--backgroundButton-Cinza);
+    width: 150px;
+    border-radius: 1rem;
+    padding: 5px;
+    border: none;
+    font-size: 20px;
+}
+#botao:hover{
+    color: var(--ColorHover-Cinza);
+    background-color: var(--backgroundButtonHover-Cinza);
+}
+
+/* Pagina Modelos */
+div#Modelos {
+
+{margin-left: auto;
+margin-right: auto;}
+{border-spacing: 0px;}
+        background-color: #079999;}
+        background-color: #079999;}
+        th {background-color: ;}
+table, th, td {border: 1px solid black; 
+    border-collapse: collapse;
+    margin:0;
+    border-spacing: 0px;
+    padding: 10px ;
+
+    
+}
+
+table#Grades {margin-left: auto; 
+margin-right: auto;}
+
+table, th, td {border: 1px solid black;
+    border-collapse: collapse;
+    font: black;
+    }
+    
+    th, td {
+        padding: 5px 10px;
+    }
+
+    th {
+        background-color: #8492A6;color: #000;}
+    }
+    
+
+ /* Página de esqueci senha */
+
+
+
+  /* h1.esq{
+    font-size: 42px;
+    color: #47525E;
+    padding: 10px 0;
+    font-family: arial, helvetica;
+    text-align: center;
+    padding-bottom: 18px;
+  }
+    
+  p{
+    margin-bottom:10px;
+    font-size: 15px;
+    text-align: center;
+    color: #47525E
+  }
+
+  
+  label{
+    color: #47525E;
+    text-align:center;
+    
+    
+  }
+  
+  
+  input {
+    
+    outline: none;
+    width: 70%;
+    margin-top: 40px;
+    color: #47525E;
+    padding: 10px;  
+    border: 1px solid #b2b2b2;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+ .botao{
+     margin-top: 20px;
+     text-align: center;
+     color:white;
+     background-color: #007bff;
+     width: 100px;
+     
+ }
+  #esquecisenha{
+    color: #47525E;
+    position: relative;
+    align-content: center;
+    top: 50px;
+    margin-left: 30px;
+    width: 500px; 
+    padding: 18px 6% 60px 6%;
+    margin-left:25%;
+    background: #f7f7f7;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    
+  }
+  
+
+  .link a{
+      text-align: center;
+      color: #007bff;
+  } */
